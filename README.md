@@ -19,9 +19,49 @@ dotfilesでは、チケット駆動開発を採用する。
 1. マージする
 
 ### チケット（Issue）の書き方
+GitHubが公開している[Issueの作成方法](https://docs.github.com/ja/issues/tracking-your-work-with-issues/creating-an-issue)にしたがって、Issueを作成する。
+テンプレートは、Feature requestを使用する。
+
+Issueは日本語で記載する。
+Issue内の文章については句点を打つが、タイトルや文でない箇条書きについては句点を打たない。
+
 ### Pull Requestの書き方
 
 ### ブランチ規約
+
+ブランチは、必ずIssueから作成する。
+作成方法については、GitHubが公開している[Issue用のブランチの作り方](https://docs.github.com/ja/issues/tracking-your-work-with-issues/creating-a-branch-for-an-issue)を参照する。
+
+ブランチ名は、カテゴリ（Category）、説明（Description）、Issue参照（Reference）で構成される。
+カテゴリと説明の間はスラッシュ`/`で区切り、説明とIssue参照の間は`_`で区切る。
+
+```
+git branch <Category>/<Description>_#<Reference>
+```
+
+#### カテゴリ（Category）
+- `feature`
+    - 機能の追加やリファクタリング、削除を行う際に使用する。
+- `fix`
+    - 個人用ツール開発において、バグを修正する際に使用する。
+- `hotfix`
+    - サービス開発において、バグを修正する際に使用する。
+- `bugfix`
+    - サービス開発において、緊急時の対応のため、一時的な解決策や通常のプロセスに従わずにバグを修正する際に使用する。
+- `test`
+    - 特定のIssueに関連付かない場合に使用する。
+
+#### 説明（Description）
+
+ブランチの説明を簡潔に記載する。
+基本的には、Issueのタイトルを英訳したものを使用し、kebab-caseにする。
+
+#### Issue参照（Reference）
+
+ブランチをIssueに関連付けるために、Issue番号を付与する。番号のプレフィックスには、`#`を付けること。
+特定のIssueに関連付かないブランチの場合は、`no-ref`と付けること。
+- `#<Issue Number>`
+- `no-ref`
 
 ### コミットメッセージ規約
 
