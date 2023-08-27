@@ -8,3 +8,9 @@
     autoclrf = input
     # Prevent Japanese garbled text
     quotepath = false
+[merge]
+    # Generate merge commit when merging
+    ff = false
+[pull]
+    # Don't generate merge commit when pulling
+    ff = only
