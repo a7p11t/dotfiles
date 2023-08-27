@@ -4,3 +4,5 @@
 [core]
     # Use vim as editor when commit
     editor = vim
+    # Convert CRLF to LF on commit
+    autoclrf = input
