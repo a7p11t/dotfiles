@@ -14,3 +14,5 @@
 [pull]
     # Don't generate merge commit when pulling
     ff = only
+[init]
+    defaultBranch = main
