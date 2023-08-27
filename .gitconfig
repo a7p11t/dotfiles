@@ -1,0 +1,18 @@
+[user]
+    name = junk
+    email = 66475075+a7p11t@users.noreply.github.com
+[core]
+    # Use vim as editor when commit
+    editor = vim
+    # Convert CRLF to LF on commit
+    autoclrf = input
+    # Prevent Japanese garbled text
+    quotepath = false
+[merge]
+    # Generate merge commit when merging
+    ff = false
+[pull]
+    # Don't generate merge commit when pulling
+    ff = only
+[init]
+    defaultBranch = main
