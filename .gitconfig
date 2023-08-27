@@ -6,3 +6,5 @@
     editor = vim
     # Convert CRLF to LF on commit
     autoclrf = input
+    # Prevent Japanese garbled text
+    quotepath = false
