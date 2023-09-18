@@ -3,6 +3,12 @@
 dotfilesとは、個人の設定ファイルおよびツールを管理するためのリポジトリである。
 
 ## 使い方
+セットアップスクリプトを実行する。
+
+```bash
+git clone https://github.com/a7p11t/dotfiles.git $HOME/dotfiles
+`./setup.sh`
+```
 
 ## 開発方針
 
