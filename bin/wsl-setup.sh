@@ -4,6 +4,9 @@
 # パッケージの更新とアップグレード
 apt update && apt -y upgrade
 
+# 必要なパッケージをインストールする
+apt -y install vim git tig
+
 # Azure CLIのインストール
 # ref. https://learn.microsoft.com/ja-jp/cli/azure/install-azure-cli-linux?pivots=apt#option-2-step-by-step-installation-instructions
 apt install -y ca-certificates curl apt-transport-https lsb-release gnupg
