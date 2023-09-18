@@ -1,5 +1,5 @@
-This script must be run as root.
-Run it from PowerShell with `wsl.exe -u root -e`.
+# This script must be run as root.
+# Run it from PowerShell with `wsl.exe -u root -e`.
 
 # パッケージの更新とアップグレード
 apt update && apt -y upgrade
