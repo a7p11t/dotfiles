@@ -12,7 +12,7 @@ echo "[user]" >|/etc/wsl.conf
 echo "default=junk" >>/etc/wsl.conf
 # hostnameをwslイメージ名に設定する
 echo "[network]" >>/etc/wsl.conf
-echo "hostname=$hostname" >>/etc/wsl.conf
+echo "hostname=$hn" >>/etc/wsl.conf
 
 # Azure CLIのインストール
 # ref. https://learn.microsoft.com/ja-jp/cli/azure/install-azure-cli-linux?pivots=apt#option-2-step-by-step-installation-instructions
